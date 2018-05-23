@@ -1,10 +1,10 @@
 body{
 }
-/* Navbar container */
+
 .navbar {
   overflow: hidden;
   background-color: #000066;
-  font-family: Arial;
+  font-family: sans-serif;
 }
 
 .navbar a {
