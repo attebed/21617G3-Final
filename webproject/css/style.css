@@ -11,9 +11,15 @@ h1{
 	margin:30px;
 }
 
+th, td{
+	padding: 2%;
+
+}
+
 a{
 	color: coral;
 	text-decoration: none;
+	padding: 2%;
 }
 
 a:hover{
@@ -47,6 +53,7 @@ footer{
 	padding: 0;
 	text-align: left;
 	display: none;
+	list-style-image: none;
 }
 .nav ul ul li{
 	display: block;
