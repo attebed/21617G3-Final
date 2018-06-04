@@ -1,0 +1,91 @@
+body{
+	color:coral;
+	font-family: Tajawal, sans-serif;
+}
+
+header{
+	background-color: blanchedalmond;
+}
+
+h1{
+	margin:30px;
+}
+
+a{
+	color: coral;
+	text-decoration: none;
+}
+nav{
+	float: right;
+}
+
+a:hover{
+	color:#CB480D;
+	text-decoration: none;
+}
+
+footer{
+	margin: 1%;
+	font-size: 60%;
+}
+
+.flex_container{
+	display:flex;
+	flex-direction: row;
+}
+
+.main{
+	width: 80%;
+	margin: 1%;
+}
+
+.nav{
+	position: relative;
+	width: 20%;
+	margin: 20px;
+	font-size: 25px;
+	list-style-type: none;
+}
+.nav ul{
+	list-style-type: none;
+}
+
+.nav ul ul {
+	position: absolute;
+	background-color:  blanchedalmond;
+	padding: 0;
+	text-align: left;
+	display: none;
+
+}
+.nav ul ul li{
+	display: block;
+	width: 8em;
+	padding-left: 1em;
+	margin-left: 0;
+
+}
+
+.nav li:hover ul{
+	display: block;
+}
+.image{
+	margin: 1%;
+}
+
+.photodesc{
+	font-size: 75%;
+}
+
+
+/*need mobile and tablet styling*/
+
+@media only screen and (max-width: 700px){
+	.nav {
+		font-size: 1em;
+		width: 200px;
+	}
+
+}
+
+@media only screen and (max-width: 1024px){}
