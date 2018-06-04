@@ -1,81 +1,157 @@
-body{
-	color:coral;
-	font-family: Tajawal, sans-serif;
+header, nav, main, footer {
+	display: block;
 }
+*{
+	box-sizing: border-box;
+	;
+}
+body{
+	margin: 0;
+	font-family: Tajawal, sans-serif;
 
+}
+#container{
+	background-color: blanchedalmond;
+	color: coral;
+	font-family: sans-serif;
+}
 header{
 	background-color: blanchedalmond;
-}
-
-h1{
-	margin:30px;
-}
-
-th, td{
-	padding: 2%;
-
-}
-
-a{
+	height:120px;
 	color: coral;
-	text-decoration: none;
-	padding: 2%;
+	padding: 20px;
 }
-
-a:hover{
-	color:#CB480D;
-	text-decoration: none;
-}
-
-footer{
-	margin: 1%;
-}
-
-.flex_container{
-	display:flex;
-	flex-direction: row;
-}
-
-.main{
-	width: 80%;
-	margin: 1%;
-}
-
-.nav{
-	position: relative;
+nav{
+	margin-top: 0;
+	padding-top: 0;
+	float: left;
 	width: 20%;
-	margin: 20px;
-	font-size: 2em;
+	background-color: #fffbf4;
+	color: coral;
+	position: relative;
+	list-style-type: none;
+	height: 100vh;
 }
-.nav ul ul {
+nav ul {
+	list-style-type: none;
+}
+nav ul ul {
 	position: absolute;
 	background-color:  blanchedalmond;
 	padding: 0;
 	text-align: left;
 	display: none;
-	list-style-image: none;
 }
-.nav ul ul li{
+nav ul ul li{
 	display: block;
 	width: 8em;
 	padding-left: 1em;
+	padding-right: 1em;
 	margin-left: 0;
-}
 
-.nav li:hover ul{
+}
+footer nav{
+	text-decoration: none;
+	background-color: white;
+
+}
+nav a {
+	text-decoration: none;
+	font-size: 1.2em;
+}
+nav a:link{
+	color: coral;
+}
+}
+nav a:focus, nav a:hover{
+	color:#CB480D;
+
+}
+nav li:hover ul{
 	display: block;
 }
-.image{
-	margin: 1%;
+nav a:active{
+	color:#CB480D;
+}
+a{
+	color: coral;
+	text-decoration: none;
+}
+a:hover{
+	color:#CB480D;
+	text-decoration: none;
+}
+main p { 
+	margin: 30px;
+}
+main{
+	float: right;
+	width: 80%;
+	padding: 1px 2px 2px 20px;
+	background-color: white;
+	color: coral;
+	position: center;
 }
 
+h1{
+	margin-top: 0;
+	font-size: 3em;
+	text-align: left;
+	text-shadow: 2px 2px 2px #CB480D;
+}
 .photodesc{
-	font-size: 75%;
+	font-size: .7em;
 }
 
+footer{
+	font-size: .70em;
+	text-align: center;
+	color: coral;
+	background-color: white;
+	padding-top: 10px;
+	clear: both;
+}
+#footernav{
+	font-size: 1.3em;
+}
+@media only screen and (max-width: 768px){
+	main{
+		margin: auto;
+		float: none;
+		text-align: center;
+	}
+	main ul li{
+		text-align: left;
+	}
+	main p{
+		text-align: left;
+	}
+	nav li:hover ul{
+		display: none;
+	}
+	nav{
+		margin: auto;
+		float: none;
+		width: 80%;
+		background-color: #fffbf4;
+		height:inherit;
+		text-align: center;
+		padding:auto;
+	}
+	nav a{
+		padding-bottom: 5px;
+		padding-top: 5px;
+	}
+	body{
+		margin: 0;
+	}
+	h1{
+		text-align: center;
+	}
 
-/*need mobile and tablet styling*/
+}
 
-@media only screen and (max-width: 768px){}
-
-@media only screen and (max-width: 1024px){}
+@media only screen and (max-width: 1024px){
+	
+	
+}
