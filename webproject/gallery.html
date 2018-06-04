@@ -1,39 +1,22 @@
- <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>WWU Photoblog &#124; Gallery</title>
-     <link href="https://fonts.googleapis.com/css?family=Tajawal" rel="stylesheet">
-     <link href="css/style.css" rel="stylesheet" type="text/css">
-	<script src="js/jquery-3.3.1.js"></script>
-	<script src="js/jquery.cycle.all.js"></script>
-	<script src="js/script.js"></script>
-  </head>
-  <body>
-  <header>
-  <h1>WWU Photoblog</h1></header>
-
-  <div class="flex_container">
-  	<!--Main content area-->
-  		<div class="main">
-
-
-        <h2>Gallery</h2>
-
-          <a href="library.html"> <img src="images/library3.JPG" alt="Library" width=80 height=60> </a>
-          <a href="performingarts.html"> <img src="images/performingarts2.JPG" alt="Performing Arts Center" width=80 height=60> </a>
-          <a href="softballfield.html"> <img src="images/softballfield1.jpg" alt="Softball Field" width=80 height=60> </a>
-          <a href="harringtonfield.html"> <img src="images/soccer1.jpg" alt="Harrington Field" width=80 height=60> </a>
-          <a href="sculptures.html"> <img src="images/sculpture4.jpg" alt="Sculptures" width=80 height=60> </a>
-          <a href="redsquare.html"> <img src="images/redsquare3.jpg" alt="Red Square" width=80 height=60> </a>
-
-  	         <div class="photodesc"></div>
-  		<p>A selection of images from out individual gallery pages. Click on the image you like to navigate to that gallery page.</p>
-  </div>
-  	<!--nav area-->
-
-  	<div class="nav">
-      <ul>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>WWU Photoblog &#124; Gallery</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0>
+  <link href="https://fonts.googleapis.com/css?family=Tajawal" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="mystyle.css">
+  <script src="js/jquery-3.3.1.js"></script>
+  <script src="js/jquery.cycle.all.js"></script>
+  <script src="js/script.js"></script>
+</head>
+<body>
+  <div id="container">
+    <header role="banner">
+      <h1>WWU Photoblog</h1>
+    </header>
+  <nav role="navigation">
+    <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="gallery.html">Gallery</a>
           <ul>
@@ -45,21 +28,38 @@
             <li><a href="redsquare.html">Red Square</a></li>
           </ul>
         </li>
-  		  <li><a href="contact.html">Contact</a></li>
-  		  <li><a href="contributors.html">Contributors</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="contributors.html">Contributors</a></li>
       </ul>
-  	</div>
+  </nav>
+  <main role="main" id="content">
+    <h2>Gallery</h2>
 
-  </div>
+          <a href="library.html"> <img src="images/library3.JPG" alt="Library" width=80 height=60> </a>
+          <a href="performingarts.html"> <img src="images/performingarts2.JPG" alt="Performing Arts Center" width=80 height=60> </a>
+          <a href="softballfield.html"> <img src="images/softballfield1.jpg" alt="Softball Field" width=80 height=60> </a>
+          <a href="harringtonfield.html"> <img src="images/soccer1.jpg" alt="Harrington Field" width=80 height=60> </a>
+          <a href="sculptures.html"> <img src="images/sculpture4.jpg" alt="Sculptures" width=80 height=60> </a>
+          <a href="redsquare.html"> <img src="images/redsquare3.jpg" alt="Red Square" width=80 height=60> </a>
 
-
+             <div class="photodesc"></div>
+      <p>A selection of images from out individual gallery pages. Click on the image you like to navigate to that gallery page.</p>
   <footer>
-  	21617 Group 3 <br>
-  	<script>
-	  var today = new Date();
-	  document.write(today);
-	</script>
+      <div id="footernav">
+      <a href="index.html">Home</a>&nbsp;&#124;&nbsp;
+      <a href="gallery.html">Gallery</a>&nbsp;&#124;&nbsp;
+      <a href="contact.html">Contact Us</a>&nbsp;&#124;&nbsp;
+      <a href="contributors.html">Contributors</a><br>
+    </div>
+  
+    21617 Group 3 &#124;
+    <script>
+    var today = new Date();
+    document.write(today);
+  </script>
   </footer>
+</main>
+</div>
 
-  </body>
+</body>
 </html>
